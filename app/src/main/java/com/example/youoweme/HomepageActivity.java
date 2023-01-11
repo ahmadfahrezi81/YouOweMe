@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.youoweme.databinding.ActivityHomePageBinding;
+import com.example.youoweme.friend_recycler_view.FriendFragment;
 
 
 public class HomepageActivity extends AppCompatActivity {
