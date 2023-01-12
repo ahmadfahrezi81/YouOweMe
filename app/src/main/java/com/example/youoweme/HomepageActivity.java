@@ -1,15 +1,16 @@
 package com.example.youoweme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.example.youoweme.databinding.ActivityHomePageBinding;
 import com.example.youoweme.friend_recycler_view.FriendFragment;
+
 
 
 public class HomepageActivity extends AppCompatActivity {
@@ -39,11 +40,15 @@ public class HomepageActivity extends AppCompatActivity {
                 case R.id.history:
                     replaceFragment(new HistoryFragment());
                     break;
-            }
+                case R.id.settings:
+                    replaceFragment(new SettingsFragment());
+                    break;
 
+            }
 
             return;
         });
+
     }
 
     private void replaceFragment (Fragment fragment){
@@ -56,4 +61,5 @@ public class HomepageActivity extends AppCompatActivity {
 
     private void onNavigationItemReselected (MenuItem item){
     }
+
 }
