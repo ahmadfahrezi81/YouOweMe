@@ -1,9 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:layout_editor_absoluteX = "1dp"
+    tools:layout_editor_absoluteY = "1dp"
+    android:fillViewport="true"
     tools:context=".PrivacyPage">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="36dp"
+            android:text="You Owe Me Privacy Policy"
+            android:textColor="#914CBB"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="342dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="When you use Splitwise, we may collect the following information about you:"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Information you provide to us:"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="361dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:text="- Registration information: When you sign up for an account with You Owe Me, you will be asked for registration information, such as your name, email address, phone number, and a password. We require you to provide an email address in order to use You Owe Me so that we can contact you about your account, and so that you can access your data from any device. Friends will be able to add you using your email address. We require you to provide a name for your account, this is the name your friends will see when adding expenses with you. Providing a phone number gives your friends another way to find you and adds an extra layer of security to your account."
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="361dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="12dp"
+            android:text="- User-generated content: We also collect and store the information you provide to us when using our service to share expenses, payments, and communicate with others. This data includes, for example, friends names, expense descriptions and amounts, and their confirmation numbers, comments and reminders, description, in addition to any other information that you attach or share while using You Owe Me. You may share this information with contacts you specify in the course of using the Service."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="361dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:text="- The way you use our service: We collect information about how you use and interact with You Owe Me. Such as the amount of expenses you add, the features you use, the actions you take, and the time, frequency and duration of your activities."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="361dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="12dp"
+            android:text="- Device and Location information: When you download or use You Owe Me, we may receive information about your device and location, which allows us to provide increased account security and regulatory compliance. It also allows us to provide location-based services such as targeted advertising, search results, and other personalized content."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="361dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="- Information related to Third Party Integrations: You Owe Me may collect information about you from third parties to help improve our service, or for security and support reasons. If you choose to use some of the optional integrations the third party services that we offer we may collect information about you from those services. For example, if you choose to send payments to your friends using one of the payment services we integrate with we may collect information from that payment service (i.e. your username for that service, the status of that payment)."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="361dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:text="- Information from other sources: We may use publicly available information about your name, email address, phone number, or other demographic data to help you during support, to address fraud or security concerns, or to personalize your experience, including by providing ads or offers. For instance, if you have a public avatar stored on a service such as Gravatar associated with your email, we may automatically populate your user avatar on You Owe Me. We may also collect information about you that we may receive from other sources or from our offline interactions with you to, among other things, enable us to verify, update information contained in our records, and to better customize the Service for you."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
+            app:layout_constraintHorizontal_bias="0.923"
+            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="361dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="12dp"
+            android:text="We take the security of your information seriously. We use technical and administrative security measures such as but not limited to encryption techniques and authentication procedures, among others, to maintain the security of your online session. Please understand, however, that while we try our best to safeguard your personal information once we receive it, no transmission of data over the Internet or any other public network can be guaranteed to be 100% secure."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="361dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:text="You can help protect the privacy of your own information by using encryption and other techniques to prevent unauthorized interception of your personal information. You are responsible for the security of your information when using unencrypted, public or otherwise unsecured networks."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="361dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:text="How we protect the information we collect"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="361dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:text="We will contact you regarding any breach of the security, confidentiality, or integrity of your unencrypted electronically stored personal information to you via email or conspicuous posting on our Site in the most expedient time possible and without unreasonable delay, insofar as consistent with (i) the legitimate needs of law enforcement or (ii) any measures necessary to determine the scope of the breach and restore the reasonable integrity of the data system."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView16"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintStart_toStartOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="361dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:text="WE WILL NOT PROVIDE ANY OF YOUR PERSONAL INFORMATION TO ANY THIRD PARTY EXCEPT AS OUTLINED IN THIS POLICY OR WITH YOUR CONSENT."
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView18"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -4,12 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class PrivacyPage extends AppCompatActivity {
+public class EditProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_privacy_page);
-        getSupportActionBar().setTitle("Privacy Policy");
+        setContentView(R.layout.activity_edit_profile);
+        getSupportActionBar().setTitle("Edit Profile");
     }
 }
