@@ -1,4 +1,4 @@
-package com.example.youoweme.friend_recycler_view;
+package com.example.youoweme.Friend_module;
 
 import android.content.Context;
 import android.view.LayoutInflater;
