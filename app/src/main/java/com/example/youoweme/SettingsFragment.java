@@ -41,14 +41,16 @@ public class SettingsFragment extends Fragment {
             }
         });
 
-        Button AboutButton = view.findViewById(R.id.AboutUsButton);
-        AboutButton.setOnClickListener(new View.OnClickListener() {
+        Button LogoutButton = view.findViewById(R.id.LogOutButton);
+        LogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent (getActivity(), AboutPage.class);
+                Intent i = new Intent (getActivity(), LoginActivity.class);
                 startActivity(i);
             }
         });
+
+
         // Inflate the layout for this fragment
         return view;
     }
