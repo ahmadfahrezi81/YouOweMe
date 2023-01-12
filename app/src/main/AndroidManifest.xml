@@ -43,6 +43,8 @@
             android:name=".Profile"
             android:parentActivityName=".HomepageActivity" />
         <activity
+            android:name=".AddFriendActivity" />
+        <activity
             android:name=".HomepageActivity"
             android:exported="true">
 

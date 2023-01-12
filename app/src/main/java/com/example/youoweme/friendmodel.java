@@ -1,4 +1,4 @@
-package com.example.youoweme.Friend_module;
+package com.example.youoweme;
 
 public class friendmodel {
     String friendname;
