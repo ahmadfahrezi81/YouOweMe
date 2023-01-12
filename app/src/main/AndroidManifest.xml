@@ -13,6 +13,23 @@
         android:theme="@style/Theme.YouOweMe"
         tools:targetApi="31">
         <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            />
+        <activity android:name=".RegisterActivity" android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            />
+        <activity
             android:name=".PrivacyPage"
             android:exported="false" />
         <activity
@@ -24,11 +41,11 @@
         <activity
             android:name=".HomepageActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
             <meta-data
                 android:name="android.app.lib_name"

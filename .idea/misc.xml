@@ -26,11 +26,15 @@
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/menu/bottom_nav_bar.xml" value="0.16875" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/menu/nav_menu.xml" value="0.184375" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.230546339473705" />
+        <entry key="app/src/main/res/menu/bottom_nav_bar.xml" value="0.2257843017578125" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
