@@ -43,7 +43,7 @@
                 android:layout_marginTop="40dp"
                 android:padding="8dp"
                 android:hint="Username"
-                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/person_edit_profile"
                 android:drawablePadding="8dp"
                 android:textColor="@color/grey"/>
             <EditText
@@ -54,7 +54,7 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Phone"
-                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:drawableLeft="@drawable/phone_edit_profile"
                 android:drawablePadding="8dp"
                 android:textColor="@color/grey"/>
             <EditText
@@ -65,7 +65,7 @@
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
                 android:hint="Email"
-                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawableLeft="@drawable/email_edit_profile"
                 android:drawablePadding="8dp"
                 android:textColor="@color/grey"/>
             <EditText
@@ -77,7 +77,7 @@
                 android:padding="8dp"
                 android:hint="Password"
                 android:inputType="textPassword"
-                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawableLeft="@drawable/lock_edit_profile"
                 android:drawablePadding="8dp"
                 android:textColor="@color/grey"/>
             <Button
