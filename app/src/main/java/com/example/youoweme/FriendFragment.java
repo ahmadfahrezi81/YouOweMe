@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -79,16 +80,18 @@ public class FriendFragment extends Fragment {
         //return inflater.inflate(R.layout.fragment_friend, container, false);
         View view = inflater.inflate(R.layout.fragment_friend, container, false);
 
-        ImageView IVaddfriend = view.findViewById(R.id.addfriendicon);
+        Button Btnaddfriend = view.findViewById(R.id.btnaddfriend);
         homepageactivity = (HomepageActivity) getActivity();
 
-        IVaddfriend.setOnClickListener(new View.OnClickListener() {
+        Btnaddfriend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent (getActivity(), AddFriendActivity.class);
+                Intent i= new Intent(getActivity(), AddFriendActivity.class);
                 startActivity(i);
             }
         });
+
+
         // Inflate the layout for this fragment
         return view;
     }
