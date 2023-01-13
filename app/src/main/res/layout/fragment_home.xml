@@ -1,177 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_settings"
-    tools:context=".HomeFragment">
 
-    <LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_settings"
+        tools:context=".HomeFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="88dp"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/user"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
         android:gravity="center"
-        android:orientation="vertical"
+        android:text="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circleImageView" />
+
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="366dp"
+        android:layout_height="95dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="264dp"
+        android:background="@drawable/border"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="162dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="328dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:text="Total you are owed"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        app:layout_constraintVertical_bias="0.033" />
+
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="270dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="RM16.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="270dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="RM13.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt3"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="328dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:text="Total you owe"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/box3"
+        android:layout_width="366dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="366dp"
+        android:layout_height="77dp"
+        android:background="@drawable/border"
+        android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="RM2.00"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+    <TextView
+        android:id="@+id/txt10"
+        android:layout_width="108dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="RM5.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:text="You Owe"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="119dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:paddingRight="10dp"
+        android:text="You Are Owed"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box2" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="77dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:text="Total"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="70dp"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:src="@drawable/user"
-            />
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="221dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="Balance To Settle Up"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/box1" />
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Username"
-            android:textSize="17sp"
-            android:textColor="#FFFFFF"
-            android:gravity="center" />
-
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_width="382dp"
-            android:layout_height="95dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="268dp"
-            android:background="@drawable/border"
-            android:text="Total you are owed"
-            android:textSize="16sp"
-            android:paddingLeft="20dp"
-            android:paddingTop="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt4"
-            android:layout_width="382dp"
-            android:layout_height="95dp"
-            android:layout_marginBottom="270dp"
-            android:text="RM6.00"
-            android:textSize="20sp"
-            android:paddingLeft="45dp"
-            android:paddingTop="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt5"
-            android:layout_width="382dp"
-            android:layout_height="95dp"
-            android:layout_marginBottom="270dp"
-            android:text="RM3.00"
-            android:textSize="20sp"
-            android:paddingLeft="238dp"
-            android:paddingTop="40dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt3"
-            android:layout_width="139dp"
-            android:layout_height="35dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="328dp"
-            android:text="Total you owe"
-            android:textSize="16sp"
-            android:paddingRight="10dp"
-            android:paddingTop="15dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
-
-        <TextView
-            android:id="@+id/txt8"
-            android:layout_width="382dp"
-            android:layout_height="76dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="40dp"
-            android:background="@drawable/border"
-            android:gravity="center_vertical"
-            android:paddingLeft="50dp"
-            android:text="You Are Owed"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt10"
-            android:layout_width="382dp"
-            android:layout_height="76dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="40dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="225dp"
-            android:text="RM5.00"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt7"
-            android:layout_width="382dp"
-            android:layout_height="76dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="132dp"
-            android:background="@drawable/border"
-            android:gravity="center_vertical"
-            android:paddingLeft="50dp"
-            android:text="You Owe"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt9"
-            android:layout_width="382dp"
-            android:layout_height="76dp"
-            android:layout_marginEnd="12dp"
-            android:layout_marginBottom="132dp"
-            android:gravity="center_vertical"
-            android:paddingLeft="225dp"
-            android:text="RM2.00"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt1"
-            android:layout_width="77dp"
-            android:layout_height="41dp"
-            android:layout_marginEnd="164dp"
-            android:layout_marginBottom="365dp"
-            android:text="Total"
-            android:gravity="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-        <TextView
-            android:id="@+id/txt6"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="80dp"
-            android:text="Balance To Settle Up"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.643" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

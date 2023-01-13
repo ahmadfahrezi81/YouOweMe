@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
+    android:background="@drawable/bglogin"
     android:padding="50dp"
     >
 
@@ -33,14 +34,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Create Your"
-            android:textSize="35sp"
+            android:textColor="@color/white"
+            android:textSize="30sp"
             tools:layout_editor_absoluteX="80dp"
             tools:layout_editor_absoluteY="231dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Account"
-            android:textSize="35sp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
             tools:layout_editor_absoluteX="80dp"
             tools:layout_editor_absoluteY="231dp" />
 
@@ -88,7 +91,10 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"/>
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple"
+            />
 
         <LinearLayout
             android:layout_width="wrap_content"
