@@ -68,18 +68,7 @@
                 android:drawableLeft="@drawable/email_edit_profile"
                 android:drawablePadding="8dp"
                 android:textColor="@color/grey"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/editPassword"
-                android:background="@drawable/purple_border"
-                android:layout_marginTop="20dp"
-                android:padding="8dp"
-                android:hint="Password"
-                android:inputType="textPassword"
-                android:drawableLeft="@drawable/lock_edit_profile"
-                android:drawablePadding="8dp"
-                android:textColor="@color/grey"/>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
