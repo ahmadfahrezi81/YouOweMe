@@ -21,7 +21,7 @@
             android:id="@+id/btnaddfriend"
             android:layout_width="276dp"
             android:layout_height="53dp"
-            android:layout_marginBottom="28dp"
+            android:layout_marginBottom="48dp"
             android:backgroundTint="@color/purple"
             android:text="ADD FRIEND"
             android:textColor="@color/white"
