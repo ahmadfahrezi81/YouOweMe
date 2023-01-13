@@ -15,7 +15,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.youoweme.Friend_module.FriendFragment;
 import com.example.youoweme.databinding.ActivityHomePageBinding;
 import com.example.youoweme.object_model.History;
 import com.google.firebase.firestore.DocumentChange;
