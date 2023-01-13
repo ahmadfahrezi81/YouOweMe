@@ -26,9 +26,13 @@
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/menu/bottom_nav_bar.xml" value="0.16875" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/menu/nav_menu.xml" value="0.184375" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.230546339473705" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/history_item_row.xml" value="0.2509057971014493" />
         <entry key="app/src/main/res/menu/bottom_nav_bar.xml" value="0.2257843017578125" />
       </map>
     </option>
