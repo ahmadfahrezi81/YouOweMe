@@ -13,11 +13,15 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.youoweme.object_model.User;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class LoginActivity extends AppCompatActivity {
     EditText email, password;
@@ -26,6 +30,19 @@ public class LoginActivity extends AppCompatActivity {
 
     FirebaseAuth fbAuth;
     FirebaseUser myUser;
+    FirebaseFirestore db;
+
+    public static String getUserFBuid() {
+        return userFBuid;
+    }
+
+    public static void setUserFBuid(String userFBuid) {
+        LoginActivity.userFBuid = userFBuid;
+    }
+
+    public static String userFBuid;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +57,9 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
             }
         });
+
+        //db stuff
+        db = FirebaseFirestore.getInstance();
 
         //Login set up
         email = findViewById(R.id.ETEmailLogin);
@@ -68,9 +88,32 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.show();
 
         fbAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
+
                 if(task.isSuccessful()){
+//                    userFBuid = fbAuth.getUid();
+                    setUserFBuid(fbAuth.getUid());
+
+                    //get data from user ***
+                    db.collection("user").document(fbAuth.getUid()).get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                        @Override
+                        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+//                            User.setEmail(task.getResult().toString());
+//                            User user = new User(task.getResult());
+
+                            User.setEmail(task.getResult().toString());
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+
+                        }
+                    });
+
+
                     progressDialog.dismiss();
                     Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
 

@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.youoweme.object_model.User;
 
 
 public class SettingsFragment extends Fragment {
@@ -24,6 +27,12 @@ public class SettingsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
         Button ProfileButton = view.findViewById(R.id.ProfileButton);
         homepageactivity = (HomepageActivity) getActivity();
+
+        //set textview username
+        TextView tvSettingsUsername = view.findViewById(R.id.TVSettingUsername);
+        tvSettingsUsername.setText(User.getUsername());
+
+
         ProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

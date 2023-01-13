@@ -36,7 +36,7 @@ public class MyAdapterHistory extends RecyclerView.Adapter<MyAdapterHistory.MyVi
         History history = historyArrayList.get(position);
         holder.description.setText(history.getDescription());
         holder.date.setText(history.getDate());
-        holder.date.setText(history.getTime());
+        holder.time.setText(history.getTime());
     }
 
     @Override

@@ -3,14 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/border.xml" value="0.1715" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.1" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1455" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_history_24.xml" value="0.1" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1175" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.1175" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.1455" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/nav_about.xml" value="0.1775" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/nav_back.xml" value="0.1715" />
@@ -18,35 +11,31 @@
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/nav_logout.xml" value="0.1775" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/nav_privacy.xml" value="0.1775" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/nav_profile.xml" value="0.1775" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/purple_border.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/drawable/white_background.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_abou_page.xml" value="0.1703125" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_about_page.xml" value="0.16875" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_edit_profile.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_home_page.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_login.xml" value="0.184375" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_page.xml" value="0.184375" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_privacy_page.xml" value="0.16875" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_profile.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_register.xml" value="0.184375" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_welcome.xml" value="0.184375" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_add.xml" value="0.22" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_add_friend.xml" value="0.1068840579710145" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_friend.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_add.xml" value="0.1" />
+        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_friend.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_history.xml" value="0.1" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_home.xml" value="0.3381294964028777" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_profile.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_settings.xml" value="0.4466666666666667" />
-        <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/fragment_settle_up.xml" value="0.184375" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/layout/nav_header.xml" value="0.1" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/menu/bottom_nav_bar.xml" value="0.16875" />
         <entry key="..\:/Users/asus1/AndroidStudioProjects/YouOweMe/app/src/main/res/menu/nav_menu.xml" value="0.184375" />
+        <entry key="app/src/main/res/layout/activity_edit_profile.xml" value="0.2509057971014493" />
         <entry key="app/src/main/res/layout/activity_history.xml" value="0.29583333333333334" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.17271078875793291" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.230546339473705" />
         <entry key="app/src/main/res/layout/fragment_add.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2912276743447686" />
+        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.2509057971014493" />
         <entry key="app/src/main/res/layout/history_item_row.xml" value="0.2509057971014493" />
         <entry key="app/src/main/res/menu/bottom_nav_bar.xml" value="0.2257843017578125" />
       </map>
