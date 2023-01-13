@@ -41,6 +41,15 @@ public class SettingsFragment extends Fragment {
             }
         });
 
+        Button AboutUsButton = view.findViewById(R.id.AboutUsButton);
+        AboutUsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (getActivity(), AboutPage.class);
+                startActivity(i);
+            }
+        });
+
         Button LogoutButton = view.findViewById(R.id.LogOutButton);
         LogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override

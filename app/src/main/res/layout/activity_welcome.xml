@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity"
+    android:background="@drawable/bgwelcome"
     android:padding="50dp"
     >
 
@@ -34,6 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Welcome"
+            android:textColor="@color/white"
             android:textSize="35sp"
             tools:layout_editor_absoluteX="80dp"
             tools:layout_editor_absoluteY="231dp" />
@@ -41,6 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Back"
+            android:textColor="@color/white"
             android:textSize="35sp"
 
             tools:layout_editor_absoluteX="80dp"
@@ -66,6 +69,8 @@
             android:text="Login"
             tools:layout_editor_absoluteX="146dp"
             tools:layout_editor_absoluteY="471dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple"
             />
 
         <Button
@@ -74,7 +79,10 @@
             android:layout_height="wrap_content"
             android:text="Sign up"
             tools:layout_editor_absoluteX="149dp"
-            tools:layout_editor_absoluteY="580dp" />
+            tools:layout_editor_absoluteY="580dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/purple"
+            />
 
 
     </LinearLayout>

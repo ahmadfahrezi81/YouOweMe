@@ -129,6 +129,7 @@
         android:layout_marginBottom="90dp"
         android:backgroundTint="#914CBB"
         android:text="save"
+        app:cornerRadius="20dp"
         android:textColor="#fff"
         android:textSize="18sp"/>
 
