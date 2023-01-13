@@ -22,16 +22,9 @@ public class HelperClass {
     public void setUsername(String username) {
         this.username = username;
     }
-    public String getPassword() {
-        return password;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    public HelperClass(String name, String email, String username, String password) {
+    public HelperClass(String name, String email, String username) {
         this.name = name;
         this.phone = phone;
         this.username = username;
-        this.password = password;
     }
 }
