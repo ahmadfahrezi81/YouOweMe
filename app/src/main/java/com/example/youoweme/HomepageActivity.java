@@ -1,5 +1,6 @@
 package com.example.youoweme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +36,8 @@ public class HomepageActivity extends AppCompatActivity {
                     break;
                 case R.id.history:
                     replaceFragment(new HistoryFragment());
+
+//                    startActivity(new Intent(HomepageActivity.this, HistoryActivity.class));
                     break;
                 case R.id.settings:
                     replaceFragment(new SettingsFragment());
