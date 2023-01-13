@@ -1,14 +1,16 @@
 package com.example.youoweme;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
 import android.os.Bundle;
 
-public class PrivacyPage extends AppCompatActivity {
+import com.example.youoweme.R;
 
+public class AddFriendActivity  extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_privacy_page);
+        setContentView(R.layout.activity_add_friend);
+
+
     }
 }

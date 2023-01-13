@@ -1,24 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".AddFragment">
 
-
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="30dp"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="30dp"
-        android:text="TV Dog Title" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="160dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:src="@drawable/boy" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/purple_border"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="Amount (RM)"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+                android:inputType="numberDecimal|numberSigned"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:text="Name of Expenses"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/expenses"
+                android:layout_width="262dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/paidby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="10dp"
+                android:text="Paid by"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <TextView
+                android:id="@+id/splittype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:text="Split Type"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:drawable/btn_dropdown" />
+
+            <TextView
+                android:id="@+id/splitto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="10dp"
+                android:text="Split To"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="170dp"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="310dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#914CBB"
+        android:text="save"
+        app:cornerRadius="20dp"
+        android:textColor="#fff"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+</LinearLayout>

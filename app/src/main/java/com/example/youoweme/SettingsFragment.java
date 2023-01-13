@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class SettingsFragment extends Fragment {
     HomepageActivity homepageactivity;
+
     public SettingsFragment() {
         // Required empty public constructor
     }
@@ -30,6 +31,35 @@ public class SettingsFragment extends Fragment {
                 startActivity(i);
             }
         });
+
+        Button PrivacyButton = view.findViewById(R.id.PrivacyButton);
+        PrivacyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (getActivity(), PrivacyPage.class);
+                startActivity(i);
+            }
+        });
+
+        Button AboutUsButton = view.findViewById(R.id.AboutUsButton);
+        AboutUsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (getActivity(), AboutPage.class);
+                startActivity(i);
+            }
+        });
+
+        Button LogoutButton = view.findViewById(R.id.LogOutButton);
+        LogoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (getActivity(), LoginActivity.class);
+                startActivity(i);
+            }
+        });
+
+
         // Inflate the layout for this fragment
         return view;
     }

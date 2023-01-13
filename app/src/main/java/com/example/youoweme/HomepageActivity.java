@@ -8,8 +8,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import com.example.youoweme.databinding.ActivityHomePageBinding;
-import com.example.youoweme.Friend_module.FriendFragment;
-
 
 
 public class HomepageActivity extends AppCompatActivity {
