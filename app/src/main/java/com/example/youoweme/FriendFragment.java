@@ -22,7 +22,7 @@ import java.util.ArrayList;
  * Use the {@link FriendFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FriendFragment extends Fragment {
+public class FriendFragment extends Fragment implements frecyclerviewinterface{
 
     ArrayList<friendmodel> friendmodels = new ArrayList<>();
     int[] friendimage = {R.drawable.cat, R.drawable.cat2};
@@ -106,7 +106,7 @@ public class FriendFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.mrecyclerview);
         setUpfriendmodels();
         //create adapter
-        frecyclerviewadapter adapter = new frecyclerviewadapter(getActivity(), friendmodels);
+        frecyclerviewadapter adapter = new frecyclerviewadapter(getActivity(), friendmodels, this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
@@ -123,4 +123,15 @@ public class FriendFragment extends Fragment {
         }
     }
 
+
+    //to one friend expenses list
+    @Override
+    public void onitemclick(int position) {
+        Intent i= new Intent(getActivity(), FriendExpenseActivity.class);
+
+
+        i.putExtra("NAME", friendmodels.get(position).getFriendname());
+        i.putExtra("TOTAL DEBT", friendmodels.get(position).getDebtamount());
+        startActivity(i);
+    }
 }
